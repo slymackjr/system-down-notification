@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "type": "module",
   "dependencies": {
     "express": "^5.1.0",
     "lucide-react": "^0.511.0",
