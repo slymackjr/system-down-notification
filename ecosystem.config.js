@@ -1,10 +1,9 @@
 module.exports = {
   apps: [{
     name: "system-down-page",
-    script: "npm",
-    args: "start",
-    instances: "max",
-    exec_mode: "cluster",
+    script: "server.js",
+    instances: 1, // or "max" if stateless
+    exec_mode: "fork", // or "cluster"
     watch: false,
     env: {
       NODE_ENV: "production",
@@ -12,3 +11,4 @@ module.exports = {
     }
   }]
 };
+
